@@ -1,3 +1,4 @@
+
 <form action="action_page.php">
   <div class="container">
     <h1>New user Registration</h1>

@@ -22,6 +22,6 @@ jobs:
        - uses: actions/setup-java@v4
          with:
            distribution: 'temurin' # See 'Supported distributions' for available options
-           java-version: '21'es: actions/checkout@v4.2.2
+           java-version: '21'
        - name: need compile
        - run: mvn compile

@@ -14,3 +14,14 @@ jobs:
            java-version: '21'
        - name: clean job
        - run:  mvn clean
+   compile:
+      runs-on: ubuntu- latest
+      needs: clean 
+      steps: 
+       - name: checkout
+       - uses: actions/setup-java@v4
+         with:
+           distribution: 'temurin' # See 'Supported distributions' for available options
+           java-version: '21'es: actions/checkout@v4.2.2
+       - name: need compile
+       - run: mvn compile

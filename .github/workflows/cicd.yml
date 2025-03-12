@@ -26,3 +26,6 @@ jobs:
            java-version: '21'
        - name: need compile
          run: mvn compile
+    staticanalyis:
+      needs: compile
+      uses: 

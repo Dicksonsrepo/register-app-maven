@@ -3,7 +3,7 @@ on:
  push:
 jobs:
    clean:
-     runs-on: Ubuntu-latest
+     runs-on: ubuntu-latest
      steps:
        - name: checkout
          uses: actions/checkout@v4.2.2
@@ -13,7 +13,7 @@ jobs:
            distribution: 'temurin' # See 'Supported distributions' for available options
            java-version: '21'
        - name: clean job
-       - run:  mvn clean
+         run:  mvn clean
    compile:
       runs-on: ubuntu-latest
       needs: clean 
@@ -24,4 +24,4 @@ jobs:
            distribution: 'temurin' # See 'Supported distributions' for available options
            java-version: '21'
        - name: need compile
-       - run: mvn compile
+         run: mvn compile

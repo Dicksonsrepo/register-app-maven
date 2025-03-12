@@ -1,0 +1,16 @@
+name: Basic Cicd pipeline - Github Hosted Runner
+on:
+ push:
+jobs:
+   clean:
+     runs-on: Ubuntu-latest
+     steps:
+       - name: checkout
+         uses: actions/checkout@v4.2.2
+       - uses: actions/checkout@v4
+       - uses: actions/setup-java@v4
+         with:
+           distribution: 'temurin' # See 'Supported distributions' for available options
+           java-version: '21'
+       - name: clean job
+       - run:  mvn clean

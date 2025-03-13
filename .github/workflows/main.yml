@@ -13,9 +13,9 @@ jobs:
       - name: sonarqube
         run: 
           mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-           -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
-           -Dsonar.host.url=https://sonarcloud.io \
-           -Dsonar.organization=dicksonsrepo \
-           -Dsonar.projectKey=Dicksonsrepo_register-app-maven
+          -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.organization=dicksonsrepo \
+          -Dsonar.projectKey=Dicksonsrepo_register-app-maven
           
     

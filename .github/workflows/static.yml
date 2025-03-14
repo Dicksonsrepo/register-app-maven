@@ -1,0 +1,15 @@
+name: Static anaylysis
+on:
+ workflow_call:
+  secrets:
+    SONAR_TOKEN: 
+      required: true   
+  inputs:
+    projectkey:
+      required: true
+      type: string
+    organisation:
+      required: true
+      type: string
+
+

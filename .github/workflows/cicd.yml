@@ -28,7 +28,7 @@ jobs:
          run: mvn compile
    staticanalyis:
      needs: compile
-     uses: Dicksonsrepo/register-app-maven/.github/workflows/main.yml@static.yml
+     uses: Dicksonsrepo/register-app-maven/.github/workflows/static.yml@main
      with:
        projectkey: "register-app-maven"
        organisationkey: "Dicksonrepo"

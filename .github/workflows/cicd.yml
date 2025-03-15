@@ -30,8 +30,8 @@ jobs:
      needs: compile
      uses: Dicksonsrepo/register-app-maven/.github/workflows/static.yml@main
      with:
-       projectkey: "register-app-maven"
-       organisationkey: "Dicksonrepo"
+       projectkey: "Dicksonsrepo_register-app-maven"
+       organisationkey: "dicksonsrepo"
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     
